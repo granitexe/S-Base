@@ -199,6 +199,13 @@ html {
   text-decoration: none;
   letter-spacing: .6rem;
   background-color: rgba(85, 85, 85, 0.534);
+  transition: .3s ease all;
+}
+
+.landing .landing-info .landing-info-button:hover {
+  color: black;
+  background: whitesmoke;
+  box-shadow: 0 0 10px whitesmoke, 0 0 40px whitesmoke, 0 0 80px whitesmoke;
 }
 
 .landing .landing-img {
@@ -248,6 +255,12 @@ html {
   letter-spacing: .2rem;
   margin-top: 20px;
   margin-bottom: 20px;
+  transition: .3s ease all;
+}
+
+.about .about-info .about-info-button:hover {
+  background: black;
+  box-shadow: 0 0 10px black, 0 0 2px black, 0 0 5px black;
 }
 
 .about .about-img .about-img-wrapper {
@@ -275,6 +288,44 @@ html {
   z-index: -1;
 }
 /* END About Section */
+
+/* Map Section */
+.map {
+  background-color: black;
+  width: 100%;
+  min-height: 50vh;
+  flex-direction: column;
+}
+
+.map .map-header {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.map .map-header .map-header-heading {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  color: whitesmoke;
+  transition: .3s ease all;
+}
+
+.map:hover .map-header .map-header-heading {
+  text-shadow: 0 0 10px whitesmoke, 0 0 40px whitesmoke, 0 0 80px whitesmoke;
+}
+
+.map .map-wrapper {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  align: center;
+}
+
+.map .map-wrapper .googlemap {
+  width: 100%;
+  display: block;
+}
+/* END Map Section */
 
 /* Service Section */
 .services {
@@ -542,6 +593,10 @@ html {
 @media only screen and (min-width:1200px) {
   .landing .landing-info .landing-info-heading {
     font-size: 6rem;
+  }
+
+  .map .map-wrapper { 
+    max-width: 70%;
   }
 }
 /* END Media Query for Desktop ONLY */
